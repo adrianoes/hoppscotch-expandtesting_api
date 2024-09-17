@@ -1,0 +1,172 @@
+{
+  "name": "expandtesting_env",
+  "v": 1,
+  "id": "5pb687pal4f",
+  "variables": [
+    {
+      "key": "base_url",
+      "value": "https://practice.expandtesting.com/notes/api",
+      "secret": false
+    },
+    {
+      "key": "user_name",
+      "value": "1136 test",
+      "secret": false
+    },
+    {
+      "key": "user_email",
+      "value": "1136@test.com",
+      "secret": false
+    },
+    {
+      "key": "user_id",
+      "value": "66e9ff5ac99d1a014d4e6b2d",
+      "secret": false
+    },
+    {
+      "key": "user_password",
+      "value": "1136_pw",
+      "secret": false
+    },
+    {
+      "key": "user_token",
+      "value": "03cc327234b24f809db904a1b09c08f514f95c6cde764761a08ed77393ff07dc",
+      "secret": false
+    },
+    {
+      "key": "user_phone",
+      "value": "1000063600",
+      "secret": false
+    },
+    {
+      "key": "user_company",
+      "value": "1000063600 S.A.",
+      "secret": false
+    },
+    {
+      "key": "note_category",
+      "value": "Work",
+      "secret": false
+    },
+    {
+      "key": "note_title",
+      "value": "1293 title",
+      "secret": false
+    },
+    {
+      "key": "note_description",
+      "value": "1293 description",
+      "secret": false
+    },
+    {
+      "key": "note_id",
+      "value": "66e9ff68c99d1a014d4e6b35",
+      "secret": false
+    },
+    {
+      "key": "note_completed",
+      "value": "false",
+      "secret": false
+    },
+    {
+      "key": "note_created_at",
+      "value": "2024-09-17T22:15:04.562Z",
+      "secret": false
+    },
+    {
+      "key": "note_updated_at",
+      "value": "2024-09-17T22:15:04.562Z",
+      "secret": false
+    },
+    {
+      "key": "note_category_UR",
+      "value": "",
+      "secret": false
+    },
+    {
+      "key": "note_2_category",
+      "value": "",
+      "secret": false
+    },
+    {
+      "key": "note_2_title",
+      "value": "",
+      "secret": false
+    },
+    {
+      "key": "note_2_description",
+      "value": "",
+      "secret": false
+    },
+    {
+      "key": "note_2_id",
+      "value": "",
+      "secret": false
+    },
+    {
+      "key": "note_2_completed",
+      "value": "",
+      "secret": false
+    },
+    {
+      "key": "note_2_created_at",
+      "value": "",
+      "secret": false
+    },
+    {
+      "key": "note_2_updated_at",
+      "value": "",
+      "secret": false
+    },
+    {
+      "key": "note_completed_UR",
+      "value": "",
+      "secret": false
+    },
+    {
+      "key": "randomValue",
+      "value": "1573",
+      "secret": false
+    },
+    {
+      "key": "new_user_password",
+      "value": "1721_new_pw",
+      "secret": false
+    },
+    {
+      "key": "note_category_2",
+      "value": "Home",
+      "secret": false
+    },
+    {
+      "key": "note_description_2",
+      "value": "1573 description",
+      "secret": false
+    },
+    {
+      "key": "note_title_2",
+      "value": "1573 title",
+      "secret": false
+    },
+    {
+      "key": "note_id_2",
+      "value": "66e9ff70c99d1a014d4e6b39",
+      "secret": false
+    },
+    {
+      "key": "note_completed_2",
+      "value": "false",
+      "secret": false
+    },
+    {
+      "key": "note_created_at_2",
+      "value": "2024-09-17T22:15:12.569Z",
+      "secret": false
+    },
+    {
+      "key": "note_updated_at_2",
+      "value": "2024-09-17T22:15:12.569Z",
+      "secret": false
+    }
+  ]
+}
