@@ -1,0 +1,25 @@
+name: expandtesting
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Step 1 Install node-gyp
+        run: npm install -g node-gyp   
+
+      - name: Step 2 Install Hoppscotch CLI
+        run: npm i -g @hoppscotch/cli
+
+      - name: Step 3 Execute collection
+        run: hopp test -e expandtesting_env.json -d 1000 expandtesting.json --reporter-junit ./reports/report.xml
+      - name: Step 4 Archive production artifacts
+        uses: actions/upload-artifact@v4
+        with:
+            name: report
+            path: ./results/report.xml
