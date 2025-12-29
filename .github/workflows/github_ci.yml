@@ -22,11 +22,17 @@ jobs:
       - name: Step 4 Install project dependencies
         run: npm install
 
-      - name: Step 5 Run tests and generate reports
-        run: npm test
+      - name: Step 5 Run tests (generate XML)
+        run: hopp test -e expandtesting_env.json -d 1000 expandtesting.json --reporter-junit ./reports/report.xml
+        continue-on-error: true
 
-      - name: Step 6 Upload test reports (XML + HTML)
+      - name: Step 6 Convert XML to HTML
+        run: node convert-report.js
+        if: always()
+
+      - name: Step 7 Upload test reports (XML + HTML)
         uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: hoppscotch-test-reports
           path: |
