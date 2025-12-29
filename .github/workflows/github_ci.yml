@@ -16,10 +16,17 @@ jobs:
       - name: Step 2 Install Hoppscotch CLI
         run: npm i -g @hoppscotch/cli
 
-      - name: Step 3 Execute collection
-        run: hopp test -e expandtesting_env.json -d 1000 expandtesting.json --reporter-junit ./reports/report.xml
-      - name: Step 4 Archive production artifacts
+      - name: Step 3 Install project dependencies
+        run: npm install
+
+      - name: Step 4 Run tests and generate reports
+        run: npm test
+
+      - name: Step 5 Upload test reports (XML + HTML)
         uses: actions/upload-artifact@v4
         with:
-            name: report
-            path: ./reports/report.xml
+          name: hoppscotch-test-reports
+          path: |
+            reports/report.xml
+            reports/report.html
+          retention-days: 30
