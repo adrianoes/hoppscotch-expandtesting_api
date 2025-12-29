@@ -16,13 +16,16 @@ jobs:
       - name: Step 2 Install Hoppscotch CLI
         run: npm i -g @hoppscotch/cli
 
-      - name: Step 3 Install project dependencies
+      - name: Step 3 Ensure reports directory exists
+        run: mkdir -p reports
+
+      - name: Step 4 Install project dependencies
         run: npm install
 
-      - name: Step 4 Run tests and generate reports
+      - name: Step 5 Run tests and generate reports
         run: npm test
 
-      - name: Step 5 Upload test reports (XML + HTML)
+      - name: Step 6 Upload test reports (XML + HTML)
         uses: actions/upload-artifact@v4
         with:
           name: hoppscotch-test-reports
